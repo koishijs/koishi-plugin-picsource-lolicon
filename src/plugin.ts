@@ -58,9 +58,9 @@ export class PicSourceLoliconPlugin {
   schema: Schema<PicSourceLoliconPluginConfigLike> = schemaFromClass(
     PicSourceLoliconPluginConfig,
   );
-  apply(ctx: Context, config: PicSourceLoliconPluginConfigLike) {
+  apply(ctx: Context, config: PicSourceLoliconPluginConfig) {
     this.ctx = ctx;
-    this.config = schemaTransform(PicSourceLoliconPluginConfig, config);
+    this.config = config;
     const source = new PicSourceLolicon(ctx, this.config);
     if (ctx.pics) {
       ctx.pics.addSource(source, ctx);

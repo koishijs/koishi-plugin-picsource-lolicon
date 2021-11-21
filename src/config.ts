@@ -1,7 +1,8 @@
 import 'source-map-support/register';
-import { DefineSchema, UseSchema } from 'koishi-utils-schemagen';
 import { PicSourceConfig } from 'koishi-plugin-pics';
+import { DefineSchema, RegisterSchema } from 'schemastery-gen';
 
+@RegisterSchema()
 export class PicSourceLoliconPluginConfig extends PicSourceConfig {
   @DefineSchema({ desc: '图源名称', default: 'lolicon' })
   name: string;

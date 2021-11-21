@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint --fix .",
-    "build": "webpack"
+    "build": "webpack && env PACK_ALL=1 webpack"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/koishijs/koishi-plugin-picsource-lolicon",
   "dependencies": {
-    "koishi-utils-schemagen": "^1.1.8",
+    "schemastery-gen": "^1.0.3",
     "source-map-support": "^0.5.20"
   },
   "peerDependencies": {
@@ -40,7 +40,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.1",
-    "koishi": "^4.0.0-alpha.11",
+    "koishi": "^4.0.0-beta.2",
     "koishi-plugin-pics": "^1.0.5",
     "prettier": "^2.4.1",
     "raw-loader": "^4.0.2",
