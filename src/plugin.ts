@@ -4,7 +4,6 @@ import {
   PicSourceLoliconPluginConfig,
   PicSourceLoliconPluginConfigLike,
 } from './config';
-import { schemaFromClass, schemaTransform } from 'koishi-utils-schemagen';
 import { PicResult, PicSource } from 'koishi-plugin-pics';
 import { LoliconReturnMessage } from './def';
 
@@ -55,9 +54,7 @@ export class PicSourceLoliconPlugin {
   private config: PicSourceLoliconPluginConfig;
   private ctx: Context;
   name = 'picsource-lolicon-main';
-  schema: Schema<PicSourceLoliconPluginConfigLike> = schemaFromClass(
-    PicSourceLoliconPluginConfig,
-  );
+  schema = PicSourceLoliconPluginConfig;
   apply(ctx: Context, config: PicSourceLoliconPluginConfig) {
     this.ctx = ctx;
     this.config = config;
