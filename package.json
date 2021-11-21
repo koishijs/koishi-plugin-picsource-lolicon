@@ -31,7 +31,7 @@
   },
   "peerDependencies": {
     "koishi": "^4.0.0-beta.2",
-    "koishi-plugin-pics": "^2.0.0",
+    "koishi-plugin-pics": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.4",
