@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-picsource-lolicon",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Koishi.js 的 [Lolicon](https://api.lolicon.app) 图源插件",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
