@@ -8,6 +8,7 @@ export * from './plugin';
 export const name = 'picsource-lolicon';
 const plugin = new PicSourceLoliconPlugin();
 export const schema = plugin.schema;
+export const using = ['pics'];
 export function apply(ctx: Context, config: PicSourceLoliconPluginConfig) {
   ctx.plugin(plugin, config);
 }

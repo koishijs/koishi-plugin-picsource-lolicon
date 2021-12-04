@@ -59,9 +59,6 @@ export class PicSourceLoliconPlugin {
     this.ctx = ctx;
     this.config = config;
     const source = new PicSourceLolicon(ctx, this.config);
-    if (ctx.pics) {
-      ctx.pics.addSource(source, ctx);
-    }
-    ctx.on('service/pics', () => ctx.pics.addSource(source, ctx));
+    ctx.pics.addSource(source, ctx);
   }
 }
