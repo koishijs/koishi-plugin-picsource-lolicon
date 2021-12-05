@@ -4,6 +4,10 @@ import { DefineSchema, RegisterSchema } from 'schemastery-gen';
 
 @RegisterSchema()
 export class PicSourceLoliconPluginConfig extends PicSourceConfig {
+  constructor(config: Partial<PicSourceLoliconPluginConfig>) {
+    super();
+  }
+
   @DefineSchema({ description: '图源名称', default: 'lolicon' })
   name: string;
 
@@ -30,4 +34,5 @@ export class PicSourceLoliconPluginConfig extends PicSourceConfig {
   endpoint: string;
 }
 
-export type PicSourceLoliconPluginConfigLike = Partial<PicSourceLoliconPluginConfig>;
+export type PicSourceLoliconPluginConfigLike =
+  Partial<PicSourceLoliconPluginConfig>;
