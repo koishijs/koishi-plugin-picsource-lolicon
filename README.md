@@ -7,7 +7,7 @@ Koishi.js 的 [Lolicon](https://api.lolicon.app) 图源插件
 ### npm
 
 ```bash
-npm install koishi-plugin-picsource-localfs
+npm install koishi-plugin-picsource-lolicon
 ```
 
 ## 配置
