@@ -19,18 +19,18 @@
     "qqbot",
     "cqhttp",
     "onebot",
-    "required:picscontainer"
+    "required:pics"
   ],
   "bugs": {
     "url": "https://github.com/koishijs/koishi-plugin-picsource-lolicon/issues"
   },
   "homepage": "https://github.com/koishijs/koishi-plugin-picsource-lolicon",
   "dependencies": {
-    "schemastery-gen": "^2.3.2",
+    "schemastery-gen": "^2.4.0",
     "source-map-support": "^0.5.20"
   },
   "peerDependencies": {
-    "koishi": "^4.1.1",
+    "koishi": "^4.2.0",
     "koishi-plugin-pics": "^8.0.0"
   },
   "devDependencies": {
@@ -40,7 +40,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.1",
-    "koishi": "^4.1.1",
+    "koishi": "^4.2.0",
     "koishi-plugin-pics": "^8.0.0",
     "prettier": "^2.4.1",
     "raw-loader": "^4.0.2",
