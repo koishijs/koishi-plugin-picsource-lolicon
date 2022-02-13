@@ -1,6 +1,6 @@
 import 'source-map-support/register';
 import { PicSourceConfig } from 'koishi-plugin-pics';
-import { DefineSchema, RegisterSchema } from 'schemastery-gen';
+import { DefineSchema, RegisterSchema } from 'koishi-thirdeye';
 
 @RegisterSchema()
 export class PicSourceLoliconPluginConfig extends PicSourceConfig {
