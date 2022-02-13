@@ -30,6 +30,7 @@ export class PicSourceLoliconPluginConfig extends PicSourceConfig {
     description: 'Lolicon POST 地址',
     default: 'https://api.lolicon.app/setu/v2',
     hidden: true,
+    role: 'url',
   })
   endpoint: string;
 }
