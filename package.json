@@ -3,7 +3,7 @@
   "version": "8.2.3",
   "description": "Koishi.js 的 [Lolicon](https://api.lolicon.app) 图源插件",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "lint": "eslint --fix .",
     "build": "webpack && env PACK_ALL=1 webpack",
@@ -33,7 +33,7 @@
   },
   "peerDependencies": {
     "koishi": "^4.3.1",
-    "koishi-plugin-pics": "^8.3.4"
+    "koishi-plugin-pics": "^8.3.5"
   },
   "devDependencies": {
     "@koishijs/plugin-cache-lru": "^1.0.0-rc.0",

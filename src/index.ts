@@ -18,10 +18,7 @@ import {
   name: 'picsource-lolicon',
   schema: PicSourceLoliconPluginConfig,
 })
-export default class PicSourceLolicon
-  extends PicSource
-  implements LifecycleEvents
-{
+export default class PicSourceLolicon extends PicSource {
   constructor(ctx: Context, config: PicSourceLoliconPluginConfigLike) {
     super(ctx);
   }
