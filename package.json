@@ -33,7 +33,7 @@
   },
   "peerDependencies": {
     "koishi": "^4.3.1",
-    "koishi-plugin-pics": "^8.3.0"
+    "koishi-plugin-pics": "^8.3.4"
   },
   "devDependencies": {
     "@koishijs/plugin-cache-lru": "^1.0.0-rc.0",
