@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-picsource-lolicon",
   "version": "8.4.2",
-  "description": "Koishi.js 的 [Lolicon](https://api.lolicon.app) 图源插件",
+  "description": "Picture source from [Lolicon](https://api.lolicon.app).",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/koishijs/koishi-plugin-picsource-lolicon",
   "dependencies": {
-    "koishi-thirdeye": "^9.1.1",
+    "koishi-thirdeye": "^9.2.4",
     "source-map-support": "^0.5.20"
   },
   "peerDependencies": {
-    "koishi": "^4.4.0",
+    "koishi": "^4.4.1",
     "koishi-plugin-pics": "^8.5.1"
   },
   "devDependencies": {
