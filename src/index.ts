@@ -1,4 +1,4 @@
-import 'source-map-support/register';
+// import 'source-map-support/register';
 import { Context, Logger } from 'koishi';
 import {
   PicSourceLoliconPluginConfig,

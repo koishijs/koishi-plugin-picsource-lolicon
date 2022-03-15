@@ -1,4 +1,4 @@
-import 'source-map-support/register';
+// import 'source-map-support/register';
 import { PicSourceConfig } from 'koishi-plugin-pics';
 import { DefineSchema, RegisterSchema } from 'koishi-thirdeye';
 import { PicSourceInfo } from 'koishi-plugin-pics/dist/src';
