@@ -9,7 +9,7 @@ export class PicSourceLoliconPluginConfig
   implements PicSourceInfo
 {
   constructor(config: Partial<PicSourceLoliconPluginConfig>) {
-    super();
+    super(config);
   }
 
   @DefineSchema({ description: '图源名称', default: 'lolicon' })
