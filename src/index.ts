@@ -66,7 +66,7 @@ export default class PicSourceLolicon extends PicSource {
       return;
     }
     return {
-      url: data.urls.original,
+      url: this.config.getExactUrl(data.urls.original),
       description: `PID:${data.pid} ${data.title} by ${data.author}`,
     };
   }

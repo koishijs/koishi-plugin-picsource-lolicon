@@ -26,6 +26,6 @@ app.plugin(DatabasePlugin);
 app.plugin(ExtrasInDev);
 
 // Target plugin
-app.plugin(TargetPlugin, { isDefault: true });
+app.plugin(TargetPlugin, { isDefault: true, mirror: 'i.pixiv.re' });
 
 app.start();

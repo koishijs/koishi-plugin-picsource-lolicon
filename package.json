@@ -31,14 +31,14 @@
     "koishi-thirdeye": "^9.2.18"
   },
   "peerDependencies": {
-    "koishi": "^4.5.0",
-    "koishi-plugin-pics": "^8.7.3"
+    "koishi": "^4.5.2",
+    "koishi-plugin-pics": "^8.7.9"
   },
   "devDependencies": {
     "@koishijs/plugin-cache-lru": "^1.0.0-rc.0",
     "@koishijs/plugin-console": "^3.2.4",
     "@koishijs/plugin-database-memory": "^1.1.0",
-    "@koishijs/plugin-sandbox": "^1.0.2",
+    "@koishijs/plugin-sandbox": "^1.1.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.4",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
