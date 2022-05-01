@@ -31,8 +31,8 @@
     "koishi-thirdeye": "^10.0.5"
   },
   "peerDependencies": {
-    "koishi": "^4.6.0",
-    "koishi-plugin-pics": "^9.0.0"
+    "koishi": "^4.6.1",
+    "koishi-plugin-pics": "^9.0.3"
   },
   "devDependencies": {
     "@koishijs/plugin-cache-lru": "^1.0.0-rc.0",

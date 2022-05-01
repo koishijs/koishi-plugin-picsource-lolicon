@@ -1,42 +1,14 @@
 // import 'source-map-support/register';
-import { Context, Logger } from 'koishi';
-import {
-  PicSourceLoliconPluginConfig,
-  PicSourceLoliconPluginConfigLike,
-} from './config';
-import PicsContainer, { PicResult, PicSource } from 'koishi-plugin-pics';
+import { PicSourceLoliconPluginConfig } from './config';
+import { PicResult, PicSourcePlugin } from 'koishi-plugin-pics';
 import { LoliconReturnMessage } from './def';
-import {
-  DefinePlugin,
-  Inject,
-  InjectConfig,
-  InjectLogger,
-  LifecycleEvents,
-} from 'koishi-thirdeye';
+import { DefinePlugin } from 'koishi-thirdeye';
 
 @DefinePlugin({
   name: 'picsource-lolicon',
   schema: PicSourceLoliconPluginConfig,
 })
-export default class PicSourceLolicon extends PicSource {
-  constructor(ctx: Context, config: PicSourceLoliconPluginConfigLike) {
-    super(ctx);
-  }
-
-  @InjectConfig()
-  private config: PicSourceLoliconPluginConfig;
-
-  @Inject(true)
-  private pics: PicsContainer;
-
-  @InjectLogger()
-  private logger: Logger;
-
-  onApply() {
-    this.config.applyTo(this);
-    this.pics.addSource(this);
-  }
-
+export default class PicSourceLolicon extends PicSourcePlugin<PicSourceLoliconPluginConfig> {
   async randomPic(picTags: string[]): Promise<PicResult> {
     if (picTags.length > 3) {
       return;
