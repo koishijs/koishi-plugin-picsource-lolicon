@@ -1,16 +1,9 @@
 // import 'source-map-support/register';
-import { PicSourceConfig } from 'koishi-plugin-pics';
 import { DefineSchema, RegisterSchema } from 'koishi-thirdeye';
-import { PicSourceInfo } from 'koishi-plugin-pics/dist/src';
 
 @RegisterSchema()
-export class PicSourceLoliconPluginConfig
-  extends PicSourceConfig
-  implements PicSourceInfo
-{
-  constructor(config: Partial<PicSourceLoliconPluginConfig>) {
-    super(config);
-  }
+export class PicSourceLoliconPluginConfig {
+  constructor(config: Partial<PicSourceLoliconPluginConfig>) {}
 
   @DefineSchema({ description: '图源名称', default: 'lolicon' })
   name: string;

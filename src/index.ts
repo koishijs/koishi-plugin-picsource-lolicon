@@ -2,18 +2,21 @@
 import { PicSourceLoliconPluginConfig } from './config';
 import { PicResult, PicSourcePlugin } from 'koishi-plugin-pics';
 import { LoliconReturnMessage } from './def';
-import { DefinePlugin } from 'koishi-thirdeye';
+import { DefinePlugin, Inject } from 'koishi-thirdeye';
+import { Quester } from 'koishi';
 
-@DefinePlugin({
-  name: 'picsource-lolicon',
-  schema: PicSourceLoliconPluginConfig,
-})
-export default class PicSourceLolicon extends PicSourcePlugin<PicSourceLoliconPluginConfig> {
+@DefinePlugin()
+export default class PicSourceLolicon extends PicSourcePlugin(
+  PicSourceLoliconPluginConfig,
+) {
+  @Inject(true)
+  private http: Quester;
+
   async randomPic(picTags: string[]): Promise<PicResult> {
     if (picTags.length > 3) {
       return;
     }
-    const result = await this.ctx.http.post<LoliconReturnMessage>(
+    const result = await this.http.post<LoliconReturnMessage>(
       this.config.endpoint,
       {
         r18: this.config.r18,
