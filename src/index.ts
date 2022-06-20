@@ -2,11 +2,11 @@
 import { PicSourceLoliconPluginConfig } from './config';
 import { PicResult, PicSourcePlugin } from 'koishi-plugin-pics';
 import { LoliconReturnMessage } from './def';
-import { DefinePlugin, Inject } from 'koishi-thirdeye';
+import { DefinePlugin, Inject, ParentPlugin } from 'koishi-thirdeye';
 import { Quester } from 'koishi';
 
 @DefinePlugin()
-export default class PicSourceLolicon extends PicSourcePlugin(
+export class PicSourceLolicon extends PicSourcePlugin(
   PicSourceLoliconPluginConfig,
 ) {
   @Inject(true)
