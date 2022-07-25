@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-picsource-lolicon",
-  "version": "9.2.6",
+  "version": "10.0.0",
   "description": "Picture source from [Lolicon](https://api.lolicon.app).",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
