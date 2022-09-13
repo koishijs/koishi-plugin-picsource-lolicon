@@ -32,7 +32,7 @@
   },
   "peerDependencies": {
     "koishi": "^4.9.1",
-    "koishi-plugin-pics": "^10.1.0"
+    "koishi-plugin-pics": "^10.2.1"
   },
   "devDependencies": {
     "@koishijs/plugin-console": "^4.5.4",
