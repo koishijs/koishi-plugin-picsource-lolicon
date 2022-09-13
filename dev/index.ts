@@ -13,10 +13,11 @@ const app = new Context({
 });
 
 // Console and sandbox
-app.plugin(SandboxPlugin);
+// app.plugin(SandboxPlugin);
 app.plugin(ConsolePlugin, {
   open: false,
 });
+app.plugin(SandboxPlugin);
 
 // Some services
 // app.plugin(CachePlugin);
