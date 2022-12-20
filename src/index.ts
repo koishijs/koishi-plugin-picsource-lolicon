@@ -3,15 +3,11 @@ import { PicSourceLoliconPluginConfig } from './config';
 import { PicResult, PicSourcePlugin } from 'koishi-plugin-pics';
 import { LoliconReturnMessage } from './def';
 import { DefinePlugin, Inject } from 'koishi-thirdeye';
-import { Quester } from 'koishi';
 
 @DefinePlugin()
 export default class PicSourceLolicon extends PicSourcePlugin(
   PicSourceLoliconPluginConfig,
 ) {
-  @Inject(true)
-  private http: Quester;
-
   async randomPic(picTags: string[]): Promise<PicResult> {
     if (picTags.length > 3) {
       return;
