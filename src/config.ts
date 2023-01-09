@@ -1,4 +1,3 @@
-// import 'source-map-support/register';
 import { DefineSchema, RegisterSchema } from 'koishi-thirdeye';
 
 @RegisterSchema()

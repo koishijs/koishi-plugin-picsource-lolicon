@@ -1,4 +1,3 @@
-// import 'source-map-support/register';
 import { PicSourceLoliconPluginConfig } from './config';
 import { PicResult, PicSourcePlugin } from 'koishi-plugin-pics';
 import { LoliconReturnMessage } from './def';

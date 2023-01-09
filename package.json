@@ -28,15 +28,15 @@
   },
   "homepage": "https://github.com/koishijs/koishi-plugin-picsource-lolicon",
   "dependencies": {
-    "koishi-thirdeye": "^11.1.20"
+    "koishi-thirdeye": "^11.1.21"
   },
   "peerDependencies": {
-    "koishi": "^4.11.0",
+    "koishi": "^4.11.1",
     "koishi-plugin-pics": "^10.6.4"
   },
   "devDependencies": {
-    "@koishijs/plugin-console": "^5.0.2",
-    "@koishijs/plugin-database-memory": "^2.2.0",
+    "@koishijs/plugin-console": "^5.1.0",
+    "@koishijs/plugin-database-memory": "^2.2.2",
     "@koishijs/plugin-sandbox": "^2.5.0",
     "@types/jest": "^29.2.0",
     "@types/node": "^16.11.4",
